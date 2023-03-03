@@ -12,50 +12,56 @@ de “número erróneo”. Si el número ingresado no es válido mostrar el mens
 
 let nota = parseInt(prompt("Ingrese una nota"));
 
-switch (nota) {
-  case 0:
-  case 1:
-  case 2:
-    document.write(`
-    <h1>Calificación según nota</h1>
-    <p>Nota ingresada [${nota}] es: Muy deficiente.</p>
-    `);
-    break;
-  case 3:
-  case 4:
-    document.write(`
-    <h1>Calificación según nota</h1>
-    <p>Nota ingresada [${nota}] es: Insuficiente.</p>
-    `);
-    break;
-  case 5:
-  case 6:
-    document.write(`
+if(!isNaN(nota) === true){
+  switch (nota) {
+    case 0:
+    case 1:
+    case 2:
+      document.write(`
       <h1>Calificación según nota</h1>
-      <p>Nota ingresada [${nota}] es: Suficiente.</p>
+      <p>Nota ingresada [${nota}] es: Muy deficiente.</p>
       `);
-    break;
-  case 7:
-    document.write(`
+      break;
+    case 3:
+    case 4:
+      document.write(`
+      <h1>Calificación según nota</h1>
+      <p>Nota ingresada [${nota}] es: Insuficiente.</p>
+      `);
+      break;
+    case 5:
+    case 6:
+      document.write(`
         <h1>Calificación según nota</h1>
-        <p>Nota ingresada [${nota}] es: Bien.</p>
+        <p>Nota ingresada [${nota}] es: Suficiente.</p>
         `);
-    break;
-  case 8:
-  case 9:
-    document.write(`
-        <h1>Calificación según nota</h1>
-        <p>Nota ingresada [${nota}] es: Notable.</p>
-        `);
-    break;
-  case 10:
-    document.write(`
-            <h1>Calificación según nota</h1>
-            <p>Nota ingresada [${nota}] es: Sobresaliente.</p>
-            `);
-    break;
-  default:
-    document.write(`
-    La nota ingresada no es válida.
-    `);
+      break;
+    case 7:
+      document.write(`
+          <h1>Calificación según nota</h1>
+          <p>Nota ingresada [${nota}] es: Bien.</p>
+          `);
+      break;
+    case 8:
+    case 9:
+      document.write(`
+          <h1>Calificación según nota</h1>
+          <p>Nota ingresada [${nota}] es: Notable.</p>
+          `);
+      break;
+    case 10:
+      document.write(`
+              <h1>Calificación según nota</h1>
+              <p>Nota ingresada [${nota}] es: Sobresaliente.</p>
+              `);
+      break;
+    default:
+      document.write(`
+      Número erróneo.
+      `);
+  }
+} else{
+  document.write(`
+  Introduce un número válido.
+  `);
 }
