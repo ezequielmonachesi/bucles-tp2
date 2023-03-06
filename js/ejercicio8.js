@@ -7,11 +7,19 @@
 // 12345
 // 123456
 
-let number = parseInt(prompt("Ingrese un número mayor que uno y menor que 50"));
+let number;
 
-for(let j = 1; j <= number; j++){
+do {
+  number = parseInt(prompt("Ingrese un número del 1 al 50"));
+} while (number < 0 || number > 50);
 
-}
-for(let i = 1; i <= number; i++){
-    document.write(j);
+if (number > 0 && number <= 50) {
+  for (let j = 0; j <= number; j++) {
+    for (let i = 1; i <= j; i++) {
+      document.write(i);
+    }
+    document.write("<br>");
+  }
+} else {
+  alert("No es valido el numero");
 }
