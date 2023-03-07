@@ -9,7 +9,11 @@
 // 22
 // 1
 
-let number = parseInt(prompt("Ingrese un número mayor que uno y menor que 50"));
+let number;
+
+do{
+  number = parseInt(prompt("Ingrese un número mayor que uno y menor que 50"));
+}while(number > 50 ||  number <0)
 
 for (let j = number; j >= 1; j--) {
   for (let i = 0; i < j; i++) {
