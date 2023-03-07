@@ -13,15 +13,29 @@
 // 9 (Múltiplo de 9)
 // 10
 
-for(let i = 1; i <=500; i++){
-
+for (let i = 1; i <= 500; i++) {
+  if (i % 4 !== 0 && i % 9 !== 0) {
+    document.write(`${i} <br>`);
+  }
+  if(i%5==0){
+    document.write(`-------- <br>`)
+  }
+  if (i % 4 === 0) {
+    document.write(`${i} (Multiplo de 4) <br>`);
+  }
+  if (i % 9 === 0) {
+    document.write(`${i} (Multiplo de 9) <br>`);
+  }
 }
-
-if (numero % 4 === 0 || numero % 9 === 0 ){
-    if(numero % 4 === 0){
-        document.write(`${numero} (Multiplo de 4)`)
-    }else{
-        document.write(`${numero} (Multiplo de 9)`)
-    }
-}
-
+/* 
+do{
+  document.write(`${i} <br>`)
+  i++;
+}while( i%4 !== 0 || i%5 !== 0 || i%9 !== 0)
+if (i % 4 === 0) {
+document.write(`${i} (Multiplo de 4) <br>`);
+} else if (i % 5 === 0) {
+document.write(`________________ <br>`);
+} else if (i % 9 === 0) {
+document.write(`${i} (Multiplo de 9) <br>`);
+} */
