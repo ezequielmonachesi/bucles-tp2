@@ -27,15 +27,3 @@ for (let i = 1; i <= 500; i++) {
     document.write(`${i} (Multiplo de 9) <br>`);
   }
 }
-/* 
-do{
-  document.write(`${i} <br>`)
-  i++;
-}while( i%4 !== 0 || i%5 !== 0 || i%9 !== 0)
-if (i % 4 === 0) {
-document.write(`${i} (Multiplo de 4) <br>`);
-} else if (i % 5 === 0) {
-document.write(`________________ <br>`);
-} else if (i % 9 === 0) {
-document.write(`${i} (Multiplo de 9) <br>`);
-} */
