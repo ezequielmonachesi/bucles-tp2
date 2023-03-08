@@ -3,13 +3,15 @@
 tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
  */
 
-let texto = 'hola que tal';
+let texto = prompt('Ingrese el texto');
 let elemento;
 
 for(let k = 0; k < texto.length; k++){
-    elemento = (texto.charAt(k)).concat('-');
-    document.write(elemento)
+    if(k < texto.length-1){
+        elemento = (texto.charAt(k)).concat('-');
+    }else{
+        elemento = texto.charAt(k);
+    }
+    document.write(elemento);
 }
-;
-document.write('<br>' + texto.substring(-1))
 
