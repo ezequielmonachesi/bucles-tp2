@@ -15,9 +15,9 @@ do{
   number = parseInt(prompt("Ingrese un número mayor que uno y menor que 50"));
 }while(number > 50 ||  number <0)
 
-for (let j = number; j >= 1; j--) {
-  for (let i = 0; i < j; i++) {
-    document.write((String.prototype.repeat = j));
+for (let i = number; i >= 1; i--) {
+  for (let f = i; f >= 1; f--) {
+    document.write(i);
   }
-  document.write("<br>");
+  document.write(`<br>`);
 }
