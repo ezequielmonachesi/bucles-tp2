@@ -8,9 +8,9 @@
 …….
 */
 
-for(let j = 1; j <= 30; j++){
-    for(let i = 0; i < j; i++){
-        document.write(String.prototype.repeat = j);
-    }  
-    document.write('<br>')
+for (let i = 1; i <= 30; i++) {
+  for (let f = 1; f <= i; f++) {
+    document.write(i);
+  }
+  document.write(`<br>`);
 }
